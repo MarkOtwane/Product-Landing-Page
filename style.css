@@ -9,15 +9,39 @@ body{
 
 .header{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0;
     .left{
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
         .logo{
-            background-color: blanchedalmond;
+            margin-right: 8rem;
         }
         .list-items{
             list-style: none;
+            display: flex;
+            gap: 2rem;
+            color: grey;
+            justify-content: space-between;
         }
+    }
+    .right{
+        display: flex;
+        gap: 5rem;
+        .cart > i{
+            font-size: 3rem;
+        }
+        .profile > img{
+            width: 50px;
+            height: 54px;
+        }
+        
+    }
+}
+.line{
+    margin: 3rem 0;
+    hr{
+        color: rgb(167, 167, 167);
+        opacity: .5;/*has no unit of measurement*/
     }
 }
